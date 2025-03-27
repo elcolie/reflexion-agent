@@ -1,0 +1,9 @@
+python-dotenv
+blank
+isort
+langchain
+langchain-openai
+langgraph
+grandalf  # ascii graph
+langchain-ollama
+langchain-community
