@@ -88,3 +88,14 @@ python-BaseException
 
 Process finished with exit code 1
 ```
+To solve this problem. Just reorder the `AnswerQuestion`
+Putting `Reflection` to the last.
+```python
+class AnswerQuestion(BaseModel):
+    """Answer the question."""
+    answer: str = Field(description="~250 word details answer to the question.")
+    search_queries: List[str] = Field(
+        description="1-3 search queries for researching improvements to address the critique of your current answer."
+    )
+    reflection: Reflection = Field(description="Your reflection on the initial answer.")
+```
